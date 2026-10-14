@@ -342,7 +342,13 @@ h2 {
   background: rgba(14, 12, 10, 0.88);
   border-top: 1px solid var(--line);
 }
-.page-num { color: var(--muted); font-size: 13px; min-width: 64px; }
+.page-num {
+  color: var(--muted);
+  font-size: 13px;
+  min-width: 64px;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
 .progress { height: 2px; background: rgba(246, 241, 232, 0.08); }
 .progress i { display: block; height: 100%; width: 0; background: var(--gold); transition: width 0.45s var(--ease); }
 .nav { display: flex; gap: 8px; }
