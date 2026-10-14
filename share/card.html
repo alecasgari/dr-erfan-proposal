@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Vazirmatn:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        background: #0e0c0a;
+        font-family: Vazirmatn, Tahoma, sans-serif;
+      }
+      .card {
+        width: 1200px;
+        height: 630px;
+        position: relative;
+        overflow: hidden;
+        background:
+          radial-gradient(520px 420px at 18% 70%, rgba(212, 180, 131, 0.16), transparent 62%),
+          radial-gradient(480px 320px at 86% 12%, rgba(212, 180, 131, 0.1), transparent 60%),
+          #0e0c0a;
+      }
+      .card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(212, 180, 131, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(212, 180, 131, 0.05) 1px, transparent 1px);
+        background-size: 56px 56px;
+        mask-image: radial-gradient(ellipse at 70% 45%, #000 20%, transparent 72%);
+      }
+      .photo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 560px;
+        height: 630px;
+        object-fit: cover;
+        object-position: 50% 18%;
+      }
+      .fade {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 640px;
+        height: 630px;
+        background: linear-gradient(90deg, transparent 42%, #0e0c0a 92%);
+      }
+      .frame {
+        position: absolute;
+        inset: 22px;
+        border: 1px solid rgba(212, 180, 131, 0.35);
+        pointer-events: none;
+      }
+      .copy {
+        position: absolute;
+        right: 78px;
+        top: 0;
+        height: 630px;
+        width: 560px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+        z-index: 2;
+      }
+      .eye {
+        color: #d4b483;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        margin-bottom: 22px;
+      }
+      h1 {
+        color: #f6f1e8;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 1.45;
+        letter-spacing: -0.02em;
+      }
+      .sub {
+        margin-top: 18px;
+        color: #cbbba8;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 1.7;
+      }
+      .rule {
+        width: 92px;
+        height: 1px;
+        margin-top: 28px;
+        margin-right: 0;
+        margin-left: auto;
+        background: #d4b483;
+      }
+      .place {
+        margin-top: 22px;
+        font-family: "Instrument Serif", Georgia, serif;
+        color: #f0ddc0;
+        font-size: 28px;
+        letter-spacing: 0.08em;
+        direction: ltr;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img class="photo" src="doctor.png" alt="" />
+      <div class="fade"></div>
+      <div class="frame"></div>
+      <div class="copy">
+        <p class="eye">پیشنهاد همکاری</p>
+        <h1>دکتر عرفان رحمانی</h1>
+        <p class="sub">بازطراحی سایت مطب در ابوظبی</p>
+        <div class="rule"></div>
+        <p class="place">Abu Dhabi</p>
+      </div>
+    </div>
+  </body>
+</html>
