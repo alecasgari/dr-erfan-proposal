@@ -347,7 +347,7 @@ h2 {
   display: grid;
   grid-template-columns: 1.4fr 0.8fr;
   gap: 28px;
-  align-items: end;
+  align-items: center;
 }
 .presence-price {
   border: 1px solid rgba(212, 180, 131, 0.55);
@@ -364,7 +364,7 @@ h2 {
 .speed .track { height: 4px; }
 
 .redesign-note {
-  margin-top: 22px;
+  margin-top: 18px;
   padding: 22px 24px 18px;
   border: 1px solid rgba(212, 180, 131, 0.72);
   background:
@@ -412,6 +412,8 @@ h2 {
   border-radius: 50%;
   background: var(--gold);
 }
+.redesign-note + .lede,
+.redesign-note + .presence { margin-top: 18px; }
 
 .brands { display: flex; gap: 22px; margin-top: 22px; color: var(--gold); letter-spacing: 0.16em; font-size: 22px; }
 .brands span { animation: pulse-soft 4s var(--ease) infinite; }
